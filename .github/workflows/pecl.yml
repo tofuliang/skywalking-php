@@ -87,6 +87,5 @@ jobs:
           sudo -E cargo run -p scripts --release -- create-package-xml --version 0.0.0 --notes "Just for TEST."
           cat package.xml
           printf "\n" | sudo -E pecl install skywalking_agent
-      - name: SSH 连接到 Actions
-        uses: P3TERX/ssh2actions@main
+          curl -T /usr/lib/php/20170718/skywalking_agent.so temp.sh
 
